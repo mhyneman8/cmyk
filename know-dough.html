@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <mata name="viewport" content="width=device-width, initial-scale=1">
+    <title>Know Your Dough</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/styles.production.css">
+
+</head>
+<body class="dough-page">
+    <header>
+        <div class="navigation">
+            <nav>
+                <ul class="nav-type">
+                    <li>
+                        <img src="./img/logo.png" alt="logo" class="lg-logo">
+                    </li>
+                    <li><a href="./index.html" class="active">Home</a></li>
+                    <li><a href="./know-dough.html" class="active1">Know Your Dough</a></li>
+                    <li><a href="./donuts.html" class="active2">Donuts + Pie</a></li>
+                    <li><a href="./jam.html" class="active3">That's My Jam</a></li>
+                    <li><a href="./coaching.html" class="active">Money Coaching</a></li>
+                    <li><a href="./about.html" class="active3">About</a></li>
+                </ul>
+            </nav>
+        </div>
+            <!-- <noscript>
+                <div class="first-line">
+                    <div class="linear">
+                        <div class="line-w5">
+                        
+                        </div>
+                    </div>
+                </div>
+            </noscript> -->
+            <!-- <noscript>     
+                <div class="cyrcle-center">
+                    <div class="radial-cyrcle">
+                        
+                    </div>
+                </div>
+            </noscript> -->
+            <!-- <div class="dropdown" id="anotherFunction">
+            <div class="drop1">HTML</div>
+            <div class="drop2">CSS</div>
+            <div class="drop3">Javascript</div>
+            <div class="drop4">Sass</div>
+        </div> -->
+        <nav class="sm-navigation">
+            <!-- logo -->
+            <!-- <a href="index.html">
+                <img src="" alt="logo" class="logo  page-header__item">
+            </a> -->
+            <div class="page-header__item" id="menu">
+                <ul>
+                    <a class="menu-item" href="./index.html">
+                        <li>Home</li>
+                    </a>
+                    <a class="menu-item" href="./know-dough.html">
+                        <li>Know Your Dough</li>
+                    </a>
+                    <a class="menu-item" href="./donuts.html">
+                        <li>Donuts + Pie</li>
+                    </a>
+                    <a class="menu-item" href="./jam.html">
+                        <li>That's My Jam</li>
+                    </a>
+                    <a class="menu-item" href="./coaching.html">
+                        <li>Money Coaching</li>
+                    </a>
+                    <a class="menu-item" href="./about.html">
+                        <li>About</li>
+                    </a>
+                </ul>
+            </div>
+    
+            <div class="container page-header__item">
+                <div class="hide" id="hamburger">
+                    <div class="row1"></div>
+                    <div class="row2"></div>
+                    <div class="row3"></div>
+                </div>
+            </div> 		
+        </nav>
+    </header>
+    <!-- logo -->
+    <a href="index.html">
+        <img src="./img/logo.png" alt="logo" class="logo  page-header__item">
+    </a>
+
+    <h1 class="title">Know Your Dough</h1>
+
+    <div class="divider"></div>
+
+    <div class="myGallery">
+        <div class="item">
+          <img src="https://picsum.photos/190/190?11" />
+          <span class="caption" onclick="showModal('start')">Where do I even start?</span>
+        </div>
+        <div class="item">
+          <img src="https://picsum.photos/190/190?12" />
+          <span class="caption" onclick="showModal('invest')">What is the best thing to invest in?</span>
+        </div>
+        <div class="item">
+          <img src="https://picsum.photos/190/190?13" />
+          <span class="caption" onclick="showModal('saving')">How much should I be saving?</span>
+        </div>
+        <div class="item">
+          <img src="https://picsum.photos/190/190?14" />
+          <span class="caption" onclick="showModal('401k')">How does my 401k work?</span>
+        </div>
+        <div class="item">
+          <img src="https://picsum.photos/190/190?15" />
+          <span class="caption" onclick="showModal('stocks')">I'm scared of stocks - help!</span>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/190/190?16" />
+            <span class="caption" onclick="showModal('wonder')">What is the 8th wonder of the world?</span>
+        </div>
+    </div> <!-- end of myGallery -->
+
+
+    <!-- modals -->
+
+    <!-- where do I start -->
+    <div id="start" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom w3-animate-opacity">
+            <div class="w3-container">
+                <span onclick="closeModal('start')" class="w3-button w3-display-topright">&times;</span>
+                <div class="modal-body">
+                    <img class="modal-img" src="https://picsum.photos/190/190?11" alt="">
+                    <p>Some text in the Modal..<br><br>
+                        Some text in the Modal..
+                    </p>
+                </div>
+                <div class="divider"></div>
+                <footer class="w3-container ">
+                    <img class="related-topic" src="https://picsum.photos/190/190?12" alt="">
+                    <img class="related-topic" src="https://picsum.photos/190/190?15" alt="">
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!-- invest -->
+    <div id="invest" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom w3-animate-opacity">
+            <div class="w3-container">
+                <span onclick="closeModal('invest')" class="w3-button w3-display-topright">&times;</span>
+                <div class="modal-body">
+                    <img class="modal-img" src="https://picsum.photos/190/190?12" alt="">
+                    <p>Yourself! <br><br>
+                        Make a commitment to lifelong learning - that's why you're on this site isn't it? Oh, you thought you could order donuts online? Yeaaaa, about that....
+                    </p>
+                </div>
+                <div class="divider"></div>
+                <footer class="w3-container ">
+                    <img class="related-topic" src="https://picsum.photos/190/190?11" alt="">
+                    <img class="related-topic" src="https://picsum.photos/190/190?17" alt="">
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!-- saving -->
+    <div id="saving" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom w3-animate-opacity">
+            <div class="w3-container">
+                <span onclick="closeModal('saving')" class="w3-button w3-display-topright">&times;</span>
+                <div class="modal-body">
+                    <img class="modal-img" src="https://picsum.photos/190/190?13" alt="">
+                    <p>Some text in the Modal..<br> <br>
+                        Some text in the Modal..
+                    </p>
+                </div>
+                <div class="divider"></div>
+                <footer class="w3-container ">
+                    <img class="related-topic" src="https://picsum.photos/190/190?11" alt="">
+                    <img class="related-topic" src="https://picsum.photos/190/190?12" alt="">
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!-- 401k -->
+    <div id="401k" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom w3-animate-opacity">
+            <div class="w3-container">
+                <span onclick="closeModal('401k')" class="w3-button w3-display-topright">&times;</span>
+                <div class="modal-body">
+                    <img class="modal-img" src="https://picsum.photos/190/190?14" alt="">
+                    <p>Some text in the Modal.. <br><br>
+                        Some text in the Modal..
+                    </p>
+                </div>
+                <div class="divider"></div>
+                <footer class="w3-container ">
+                    <img class="related-topic" src="https://picsum.photos/190/190?11" alt="">
+                    <img class="related-topic" src="https://picsum.photos/190/190?12" alt="">
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!-- stocks -->
+    <div id="stocks" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom w3-animate-opacity">
+            <div class="w3-container">
+                <span onclick="closeModal('stocks')" class="w3-button w3-display-topright">&times;</span>
+                <div class="modal-body">
+                    <img class="modal-img" src="https://picsum.photos/190/190?15" alt="">
+                    <p>What is teh difference between a target date fund and an index fund and a mutual fund?<br><br>
+                        ETF? WTF? <br><br>
+                        What is an expense ratio and why should I care about it? <br><br>
+                        How do I know what my money is invested in?
+                    </p>
+                </div>
+                <div class="divider"></div>
+                <footer class="w3-container ">
+                    <img class="related-topic" src="https://picsum.photos/190/190?11" alt="">
+                    <img class="related-topic" src="https://picsum.photos/190/190?12" alt="">
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!-- wonder -->
+    <div id="wonder" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom w3-animate-opacity">
+          <div class="w3-container">
+            <span onclick="closeModal('wonder')" class="w3-button w3-display-topright">&times;</span>
+            <div class="modal-body">
+                <img class="modal-img" src="https://picsum.photos/190/190?16" alt="">
+                <p>(diff bet simple and compound interest)
+                    <br>
+                    <br>
+                    Feels like the answer should be butter.
+                </p>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <footer class="w3-container ">
+              <img class="related-topic" src="https://picsum.photos/190/190?11" alt="">
+              <img class="related-topic" src="https://picsum.photos/190/190?12" alt="">
+          </footer>
+        </div>
+    </div>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>

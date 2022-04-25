@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    <title>About</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="stylesheet" href="css/styles.production.css">
+</head>
+<body>
+    <header>
+    <div class="navigation">
+        <nav>
+            <ul class="nav-type">
+                <li>
+                    <img src="./img/logo.png" alt="logo" class="lg-logo">
+                </li>
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="./know-dough.html" class="active1">Know Your Dough</a></li>
+                <li><a href="./donuts.html" class="active2">Donuts + Pie</a></li>
+                <li><a href="./jam.html" class="active3">That's My Jam</a></li>
+                <li><a href="./coaching.html" class="active">Money Coaching</a></li>
+                <li><a href="./about.html" class="active3">About</a></li>
+            </ul>
+        </nav>
+    </div>
+        <!-- <noscript>
+            <div class="first-line">
+                <div class="linear">
+                    <div class="line-w5">
+                    
+                    </div>
+                </div>
+            </div>
+        </noscript>
+        <noscript>     
+            <div class="cyrcle-center">
+                <div class="radial-cyrcle">
+                    
+                </div>
+            </div>
+        </noscript> -->
+        <!-- <div class="dropdown" id="anotherFunction">
+        <div class="drop1">HTML</div>
+        <div class="drop2">CSS</div>
+        <div class="drop3">Javascript</div>
+        <div class="drop4">Sass</div>
+    </div> -->
+        <nav class="sm-navigation">
+            <!-- logo -->
+            <!-- <a href="index.html">
+                <img src="" alt="logo" class="logo  page-header__item">
+            </a> -->
+            <div class="page-header__item" id="menu">
+                <ul>
+                    <a class="menu-item" href="./index.html">
+                        <li>Home</li>
+                    </a>
+                    <a class="menu-item" href="./know-dough.html">
+                        <li>Know Your Dough</li>
+                    </a>
+                    <a class="menu-item" href="./donuts.html">
+                        <li>Donuts + Pie</li>
+                    </a>
+                    <a class="menu-item" href="./jam.html">
+                        <li>That's My Jam</li>
+                    </a>
+                    <a class="menu-item" href="./coaching.html">
+                        <li>Money Coaching</li>
+                    </a>
+                    <a class="menu-item" href="./about.html">
+                        <li>About</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="container page-header__item">
+                <div class="hide" id="hamburger">
+                    <div class="row1"></div>
+                    <div class="row2"></div>
+                    <div class="row3"></div>
+                </div>
+            </div> 		
+        </nav>
+    </header>
+    <!-- logo -->
+    <a href="index.html">
+        <img src="./img/logo.png" alt="logo" class="logo  page-header__item">
+    </a>
+
+    <div class="about-page">
+        <h1 class="title">About Me</h1>
+        <div class="divider"></div>
+        <div class="about-body">
+           <img class="about-img" src="https://picsum.photos/190/190?30" alt="">
+            <p class="about-para">
+                Recovering designer. Personal finance enthusiast. 
+                Unofficial croissant connoisseur. Would rather spend 
+                my time going on fun adventures than thinking about my 
+                money.
+            <br><br>
+                My superpower is creating order out of chaos. Forward 
+                movement, both mental and physcial, is a part of my daily 
+                life. Spreadsheets are my love language.
+            </p> 
+        </div> 
+        <div class="center">
+            <button class="send" onclick="showModal('contact')">Send us a Message</button>
+        </div>
+    </div>
+    
+
+    <!-- contact modal -->
+    <div id="contact" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom w3-animate-opacity">
+            <div class="w3-container">
+                <span onclick="closeModal('contact')" class="w3-button w3-display-topright">&times;</span>
+                <div class="modal-body">
+                    <h3>Get in Touch</h3>
+                    <form action="">
+                        <input class="input" type="text" name="name" id="name" placeholder="Enter your full name" required>
+                        <input class="input" type="text" name="email" id="email" placeholder="Enter your email" required>
+                        <textarea class="input" name="message" id="message" cols="20" rows="10" required placeholder="Enter your message here..."></textarea>
+                        <input type="submit" class="send">
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>
