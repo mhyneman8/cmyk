@@ -385,6 +385,14 @@ nav {
     margin: auto;
 }
 
+.banner {
+  height: 200px;
+  overflow: hidden;
+  margin-top: -10px;
+  /* width: 100% */
+  top: 0
+}
+
 .about-page,
 .dough-page,
 .jam-page,
@@ -397,10 +405,13 @@ nav {
 
 .title {
     text-align: center;
-    margin: 30px auto;
+    margin: 12px auto;
     font-size: 52px;
-    /* color: var(--black); */
     font-weight: bold;
+}
+
+.subtitle {
+  text-align: center;
 }
 
 .button {
@@ -607,6 +618,10 @@ nav {
     cursor: pointer;
 }
 
+.w3-modal {
+  padding-top: 80px;
+}
+
 .w3-modal-content {
     padding: 20px;
     border-radius: 3px;
@@ -623,7 +638,11 @@ nav {
 }
 
 .w3-button {
-    width: 10%;
+    width: 5%;
+    /* height: 5%; */
+    font-size: 30px;
+    margin: 4px;
+    border-radius: 50px;
 }
 
 .divider {
@@ -631,6 +650,13 @@ nav {
     border: 0.8px solid lightgrey;
     border-radius: 50%;
     margin: 10px;
+}
+
+.related-topic-button {
+  border: none;
+  display: inline;
+  width: 51px;
+  margin: 10px;
 }
 
 .related-topic {
@@ -661,6 +687,13 @@ nav {
     width: 200px;
     margin: auto;
 }
+
+/* img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+} */
 
 .about-para {
     width: 500px;
