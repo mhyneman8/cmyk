@@ -93,7 +93,12 @@ function graph() {
             legend: 'none',
             backgroundColor: 'none',
             chartArea: {width:'100%', height: '100%'},
-            colors: ['#f2ebe9', '#de5499', '#264143', '#e99f4c']
+            colors: ['#0d0221', '#f0f2ef', '#4f6367', '#e99f4c'],
+            annotations: {
+               textStyle: {color: '#fff'}, 
+            },
+            
+            tooltip: {trigger: 'selection'},
         };
     
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
@@ -109,14 +114,14 @@ function graph() {
             ['Sleep',    7]
         ]);
         var options = {
-            reverseCategories: true,
-            pieHole: 0.4,
+            pieHole: 0.7,
             width: '100%',
             height: '100%',
             legend: 'none',
             backgroundColor: 'none',
             chartArea: {width:'100%', height: '100%'},
-            colors: ['#f2ebe9', '#de5499', '#264143', '#e99f4c']
+            colors: [ '#f0f2ef', '#0d0221', '#4f6367', '#e99f4c'],
+            tooltip: { trigger: 'selection'},
         };
         var chart2 = new google.visualization.PieChart(document.getElementById('donutchart'));
         chart2.draw(data, options);
@@ -135,7 +140,8 @@ function graph() {
             legend: 'none',
             backgroundColor: 'none',
             chartArea: {width:'100%', height: '100%'},
-            colors: ['#f2ebe9', '#de5499', '#264143', '#e99f4c']
+            colors: ['#e99f4c', '#0d0221', '#f0f2ef', '#4f6367'],
+            tooltip: { trigger: 'selection'},
         };
         var chart2 = new google.visualization.PieChart(document.getElementById('piechart2'));
         chart2.draw(data, options);
@@ -149,14 +155,14 @@ function graph() {
             ['Sleep',    7]
         ]);
         var options = {
-            reverseCategories: true,
-            pidHole: 0.8,
+            pieHole: 0.7,
             width: '100%',
             height: '100%',
             legend: 'none',
             backgroundColor: 'none',
             chartArea: {width:'100%', height: '100%'},
-            colors: ['#f2ebe9', '#de5499', '#264143', '#e99f4c']
+            colors: ['#f0f2ef', '#0d0221', '#4f6367', '#e99f4c'],
+            tooltip: { trigger: 'selection'},
         };
         var chart2 = new google.visualization.PieChart(document.getElementById('donutchart2'));
         chart2.draw(data, options);
@@ -175,7 +181,8 @@ function graph() {
             legend: 'none',
             backgroundColor: 'none',
             chartArea: {width:'100%', height: '100%'},
-            colors: ['#f2ebe9', '#de5499', '#264143', '#e99f4c']
+            colors: ['#4f6367', '#0d0221', '#e99f4c', '#f0f2ef'],
+            tooltip: { trigger: 'selection'},
         };
         var chart2 = new google.visualization.PieChart(document.getElementById('piechart3'));
         chart2.draw(data, options);
@@ -189,14 +196,14 @@ function graph() {
             ['Watch TV', 2],
         ]);
         var options = {
-            reverseCategories: true,
-            pieHole: 0.3,
+            pieHole: 0.6,
             width: '100%',
             height: '100%',
             legend: 'none',
             backgroundColor: 'none',
             chartArea: {width:'100%', height: '100%'},
-            colors: ['#f2ebe9', '#de5499', '#264143', '#e99f4c']
+            colors: ['#f2ebe9', '#de5499', '#264143', '#e99f4c'],
+            tooltip: { trigger: 'selection'},
         };
         var chart2 = new google.visualization.PieChart(document.getElementById('donutchart3'));
         chart2.draw(data, options);
@@ -215,7 +222,8 @@ function graph() {
             legend: 'none',
             backgroundColor: 'none',
             chartArea: {width:'100%', height: '100%'},
-            colors: ['#f2ebe9', '#de5499', '#264143', '#e99f4c']
+            colors: ['#f2ebe9', '#de5499', '#264143', '#e99f4c'],
+            tooltip: { trigger: 'selection'},
         };
         var chart2 = new google.visualization.PieChart(document.getElementById('piechart4'));
         chart2.draw(data, options);
@@ -229,14 +237,14 @@ function graph() {
             ['Sleep',    7]
         ]);
         var options = {
-            reverseCategories: true,
-            pieHole: 0.5,
+            pieHole: 0.7,
             width: '100%',
             height: '100%',
             legend: 'none',
             backgroundColor: 'none',
             chartArea: {width:'100%', height: '100%'},
-            colors: ['#f2ebe9', '#de5499', '#264143', '#e99f4c']
+            colors: ['#f2ebe9', '#de5499', '#264143', '#e99f4c'],
+            tooltip: { trigger: 'selection'},
         };
         var chart2 = new google.visualization.PieChart(document.getElementById('donutchart4'));
         chart2.draw(data, options);
@@ -255,7 +263,8 @@ function graph() {
             legend: 'none',
             backgroundColor: 'none',
             chartArea: {width:'100%', height: '100%'},
-            colors: ['#f2ebe9', '#de5499', '#264143', '#e99f4c']
+            colors: ['#f2ebe9', '#de5499', '#264143', '#e99f4c'],
+            tooltip: { trigger: 'selection'},
         };
         var chart2 = new google.visualization.PieChart(document.getElementById('piechart5'));
         chart2.draw(data, options);

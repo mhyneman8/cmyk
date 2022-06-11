@@ -659,7 +659,6 @@ nav {
 
 .w3-button {
     width: 5%;
-    /* height: 5%; */
     font-size: 30px;
     margin: 4px;
     border-radius: 50px;
@@ -888,6 +887,50 @@ nav {
     box-shadow: 17px 20px 50px 9px #C6C0B6;
 }
 
+@media all and (max-width: 850px) {
+  .chart-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    width: 100%
+  }
+}
+
+@media all and (max-width: 650px) {
+  .chart-grid {
+     grid-template-columns: 1fr;
+  }
+}
+
 .chart-grid .item {
     width: 100%;
+    position: relative;
 }
+@media all and (max-width: 700px) {
+  .chart-grid.item {
+    width: 50%;
+  }
+}
+
+/* chart text overlay */
+.overlay-text {
+  line-height: 30px;
+  position: absolute;
+  z-index: 5;
+  font-family: 'Arial Black';
+  font-size: 25px;
+  font-weight: bold;
+  top: 60px;
+  left: 10px;
+  pointer-events: none;
+  text-align: center;
+}
+
+/* change color of annotation text */
+/* g .google-visualization-tooltip text  {
+  fill: red;
+} */
+
+/* change background color of annotation */
+/* g .google-visualization-tooltip path  {
+  fill: red;
+} */
