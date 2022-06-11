@@ -568,6 +568,26 @@ nav {
     box-shadow: 17px 20px 50px 9px #C6C0B6;
 }
 
+@media all and (max-width: 800px) {
+  .myGallery {
+    grid-template-columns: repeat(2, minmax(100px, 400px));
+    grid-gap: 20px;
+    width: 90%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .myGallery {
+    width: 100%
+  }
+}
+
+@media all and (max-width: 400px) {
+  .myGallery {
+    grid-template-columns: 1fr;
+  }
+}
+
 .myGallery img {
     width: 100%;
 }
