@@ -23,11 +23,17 @@ function myData() {
 // modal show
 function showModal(id) {
     document.getElementById(id).style.display="block";
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${window.scrollY}px`;
 }
 
 // modal close
 function closeModal(id) {
     document.getElementById(id).style.display="none";
+    const scrollY = document.body.style.top;
+    document.body.style.position = '';
+    document.body.style.top = '';
+    window.scrollTo(0, parseInt(scrollY || '0') * -1);
 }
 
 // small menu
