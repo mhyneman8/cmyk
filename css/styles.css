@@ -659,7 +659,7 @@ nav {
     width: 90%;
     border: 0.8px solid lightgrey;
     border-radius: 50%;
-    margin: 10px;
+    margin: 30px auto;
 }
 
 .related-topic-button {
@@ -793,13 +793,13 @@ nav {
 .philosophy {
     width: 70%;
     padding: 50px 30px;
-    margin: 70px auto 150px auto;
+    margin: 30px auto 70px auto;
     text-align: center;
-    background-color: var(--fuchsia);
+    /* background-color: var(--fuchsia); */
     opacity: 0.8;
     color: var(--green);
     border-radius: 3%;
-    box-shadow: 17px 20px 42px 1px #c6c0b6;
+    /* box-shadow: 17px 20px 42px 1px #c6c0b6; */
 }
 
 .philosophy p {
@@ -810,31 +810,41 @@ nav {
 
 .topics {
     background-color: var(--white);
-    width: 65%;
+    width: 80%;
     height: 350px;
-    padding: 80px 110px;
-    margin: 75px auto;
+    padding: 50px;
+    margin: 135px auto;
     border-radius: 3%;
     box-shadow: 17px 20px 42px 1px #c6c0b6;
 }
 
-.topics ul li {
-    margin-left: 10%;
-    line-height: 1.5;
-    list-style-type: none;
+@media all and (max-width: 600px) {
+  .topics {
+    width: 100%;
+  }
 }
 
-.topics ul li:before {
-    content: '';
-    display: inline-block;
-    height: 15px;
-    width: 15px;
-    background-image: url('../img/donut.png');
-    background-size: contain;
-    margin-left: -17px;
-    margin-right: 5px;
-    margin-top: 2px;
-  }
+.topics ul {
+  display: flex; 
+  /* flex-direction: row;  */
+  list-style-type: none;
+  justify-content: center;
+  margin: 10% 0;
+  width: 100%;
+  text-align: center;
+}
+
+.topics ul li img {
+  border-radius: 10px;
+  width: 90px;
+}
+
+.topics ul li {
+    /* margin-left: 10%; */
+    line-height: 1.5;
+    /* list-style-type: none; */
+    width: 132px;
+}
 
 .topics h2 {
     text-align: center;
@@ -842,8 +852,9 @@ nav {
 }
 
 .coaching-img {
-    max-width: 70%;
+    max-width: 80%;
     margin: 90px auto;
+    padding: 40px;
     text-align: center;
     display: block;
     border-radius: 3%;
@@ -852,7 +863,9 @@ nav {
 
 .section-header{
     text-align: center;
-    margin: 242px auto 0px auto;
+    margin: 142px auto 0px auto;
+    font-size: 40px;
+    width: 100%;
 }
 
 .coaching-grid ul li {
