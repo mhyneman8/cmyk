@@ -6,12 +6,12 @@
     <title>Know Your Dough</title>
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="css/styles.production.css">
+    <link rel="stylesheet" href="css/styles.css">
 
 </head>
 <body class="dough-page">
     <header>
-        <div class="navigation">
+        <div class="navigation" id="navigation">
             <nav>
                 <ul class="nav-type">
                     <li>
@@ -26,33 +26,8 @@
                 </ul>
             </nav>
         </div>
-            <!-- <noscript>
-                <div class="first-line">
-                    <div class="linear">
-                        <div class="line-w5">
-                        
-                        </div>
-                    </div>
-                </div>
-            </noscript> -->
-            <!-- <noscript>     
-                <div class="cyrcle-center">
-                    <div class="radial-cyrcle">
-                        
-                    </div>
-                </div>
-            </noscript> -->
-            <!-- <div class="dropdown" id="anotherFunction">
-            <div class="drop1">HTML</div>
-            <div class="drop2">CSS</div>
-            <div class="drop3">Javascript</div>
-            <div class="drop4">Sass</div>
-        </div> -->
+
         <nav class="sm-navigation">
-            <!-- logo -->
-            <!-- <a href="index.html">
-                <img src="" alt="logo" class="logo  page-header__item">
-            </a> -->
             <div class="page-header__item" id="menu">
                 <ul>
                     <a class="menu-item" href="./index.html">
@@ -90,7 +65,12 @@
         <img src="./img/logo.png" alt="logo" class="logo  page-header__item">
     </a>
 
+
+    <div class="banner">
+        <img src="./img/dough.jpg" alt="">
+    </div>
     <h1 class="title">Know Your Dough</h1>
+    <h4 class="subtitle">You have questions, I have answers</h4>
 
     <div class="divider"></div>
 
@@ -131,14 +111,19 @@
                 <span onclick="closeModal('start')" class="w3-button w3-display-topright">&times;</span>
                 <div class="modal-body">
                     <img class="modal-img" src="https://picsum.photos/190/190?11" alt="">
-                    <p>Some text in the Modal..<br><br>
-                        Some text in the Modal..
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        <br><br>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </div>
                 <div class="divider"></div>
                 <footer class="w3-container ">
-                    <img class="related-topic" src="https://picsum.photos/190/190?12" alt="">
-                    <img class="related-topic" src="https://picsum.photos/190/190?15" alt="">
+                    <button class="related-topic-button" onclick="showModal('invest'); closeModal('start')" >
+                        <img class="related-topic" src="https://picsum.photos/190/190?12" alt="">
+                    </button>
+                    <button class="related-topic-button" onclick="showModal('stocks'); closeModal('start')" >
+                        <img class="related-topic" src="https://picsum.photos/190/190?15" alt="">
+                    </button>       
                 </footer>
             </div>
         </div>
@@ -157,8 +142,12 @@
                 </div>
                 <div class="divider"></div>
                 <footer class="w3-container ">
-                    <img class="related-topic" src="https://picsum.photos/190/190?11" alt="">
-                    <img class="related-topic" src="https://picsum.photos/190/190?17" alt="">
+                    <button class="related-topic-button" onclick="showModal('start'); closeModal('invest')" >
+                        <img class="related-topic" src="https://picsum.photos/190/190?11" alt="">
+                    </button>
+                    <button class="related-topic-button" onclick="showModal('wonder'); closeModal('invest')" >
+                        <img class="related-topic" src="https://picsum.photos/190/190?16" alt="">
+                    </button>
                 </footer>
             </div>
         </div>
@@ -171,14 +160,19 @@
                 <span onclick="closeModal('saving')" class="w3-button w3-display-topright">&times;</span>
                 <div class="modal-body">
                     <img class="modal-img" src="https://picsum.photos/190/190?13" alt="">
-                    <p>Some text in the Modal..<br> <br>
-                        Some text in the Modal..
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        <br><br>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </div>
                 <div class="divider"></div>
                 <footer class="w3-container ">
-                    <img class="related-topic" src="https://picsum.photos/190/190?11" alt="">
-                    <img class="related-topic" src="https://picsum.photos/190/190?12" alt="">
+                    <button class="related-topic-button" onclick="showModal('start'); closeModal('saving')" >
+                        <img class="related-topic" src="https://picsum.photos/190/190?11" alt="">
+                    </button>
+                    <button class="related-topic-button" onclick="showModal('invest'); closeModal('saving')">
+                        <img class="related-topic" src="https://picsum.photos/190/190?12" alt="">
+                    </button>
                 </footer>
             </div>
         </div>
@@ -191,14 +185,19 @@
                 <span onclick="closeModal('401k')" class="w3-button w3-display-topright">&times;</span>
                 <div class="modal-body">
                     <img class="modal-img" src="https://picsum.photos/190/190?14" alt="">
-                    <p>Some text in the Modal.. <br><br>
-                        Some text in the Modal..
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        <br><br>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </div>
                 <div class="divider"></div>
                 <footer class="w3-container ">
-                    <img class="related-topic" src="https://picsum.photos/190/190?11" alt="">
-                    <img class="related-topic" src="https://picsum.photos/190/190?12" alt="">
+                    <button class="related-topic-button" onclick="showModal('start'); closeModal('401k')" >
+                        <img class="related-topic" src="https://picsum.photos/190/190?11" alt="">
+                    </button>
+                    <button class="related-topic-button" onclick="showModal('invest'); closeModal('401k')" >
+                        <img class="related-topic" src="https://picsum.photos/190/190?12" alt="">
+                    </button>
                 </footer>
             </div>
         </div>
@@ -219,8 +218,12 @@
                 </div>
                 <div class="divider"></div>
                 <footer class="w3-container ">
-                    <img class="related-topic" src="https://picsum.photos/190/190?11" alt="">
-                    <img class="related-topic" src="https://picsum.photos/190/190?12" alt="">
+                    <button class="related-topic-button" onclick="showModal('start'); closeModal('stocks')" >
+                        <img class="related-topic" src="https://picsum.photos/190/190?11" alt="">
+                    </button>
+                    <button class="related-topic-button" onclick="showModal('invest'); closeModal('stocks')" >
+                        <img class="related-topic" src="https://picsum.photos/190/190?12" alt="">
+                    </button>
                 </footer>
             </div>
         </div>
@@ -242,8 +245,12 @@
           </div>
           <div class="divider"></div>
           <footer class="w3-container ">
+            <button class="related-topic-button" onclick="showModal('invest'); closeModal('wonder')" >
               <img class="related-topic" src="https://picsum.photos/190/190?11" alt="">
+            </button>
+            <button class="related-topic-button" onclick="showModal('invest'); closeModal('wonder')" >
               <img class="related-topic" src="https://picsum.photos/190/190?12" alt="">
+            </button>
           </footer>
         </div>
     </div>
