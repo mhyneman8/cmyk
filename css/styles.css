@@ -18,7 +18,7 @@ body {
     margin: 0;
     padding: 0;
     background: #fff;
-    color: var(--black)
+    color: var(--black);
 }
 
 #navigation {
@@ -412,6 +412,7 @@ nav {
     text-align: center;
     margin: 12px auto;
     font-size: 52px;
+    padding: 20px;
     font-weight: bold;
 }
 
@@ -419,6 +420,7 @@ nav {
   text-align: center;
   font-weight: 400;
   font-size: 20px;
+  padding: 10px;
 }
 
 .button {
@@ -497,7 +499,7 @@ nav {
 .service-container {
   display: flex;
   justify-content: center;
-  margin: 50px auto;
+  margin: 50px auto 250px;
 }
 
 .service {
@@ -537,7 +539,7 @@ nav {
   .service {
     width: 60%;
     margin: 30px auto;
-    height: 300px;
+    min-height: 300px;
   }
 
   .service li {
@@ -558,7 +560,7 @@ nav {
     grid-template-columns: repeat(3, minmax(100px, 400px));
     text-align: center;
     background-color: var(--white);
-    margin: 70px auto;
+    margin: 70px auto 250px;
     width: 80%;
     padding: 50px;
     border-radius: 10px;
@@ -861,7 +863,6 @@ nav {
     padding: 50px 30px;
     margin: 30px auto 70px auto;
     text-align: center;
-    /* background-color: var(--fuchsia); */
     opacity: 0.8;
     color: var(--green);
     border-radius: 3%;
@@ -871,13 +872,19 @@ nav {
 .philosophy p {
     margin: 5px;
     font-size: 22px;
-    line-height: 1.8;
+    line-height: 1.2;
+}
+
+@media all and (max-width: 420px) {
+  .philosophy {
+    width: 100%;
+  }
 }
 
 .topics {
     background-color: var(--white);
     width: 80%;
-    height: 350px;
+    height: auto;
     padding: 50px;
     margin: 135px auto;
     border-radius: 3%;
@@ -890,9 +897,22 @@ nav {
   }
 }
 
-.topics ul {
-  display: flex; 
-  /* flex-direction: row;  */
+.topics ul li img {
+  border-radius: 10px;
+  width: 90px;
+}
+
+.topics h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.coaching-grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center;
+  width: 100%;
   list-style-type: none;
   justify-content: center;
   margin: 10% 0;
@@ -900,21 +920,22 @@ nav {
   text-align: center;
 }
 
-.topics ul li img {
-  border-radius: 10px;
-  width: 90px;
-}
-
-.topics ul li {
-    /* margin-left: 10%; */
+.coaching-grid .item {
+    position: relative;
+    border-radius: 10px;
     line-height: 1.5;
-    /* list-style-type: none; */
-    width: 132px;
 }
 
-.topics h2 {
-    text-align: center;
-    margin-bottom: 20px;
+@media all and (max-width: 500px) {
+  .coaching-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .coaching-grid .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .coaching-img {
@@ -927,6 +948,14 @@ nav {
     box-shadow: 17px 20px 42px 1px #c6c0b6;
 }
 
+@media all and (max-width: 450px) {
+  .coaching-img {
+    width: 100%;
+    padding: 0;
+    box-shadow: none;
+  }
+}
+
 .section-header{
     text-align: center;
     margin: 142px auto 0px auto;
@@ -934,12 +963,12 @@ nav {
     width: 100%;
 }
 
-.coaching-grid ul li {
+/* .coaching-grid ul li {
     padding-top: 7px;
     list-style-type: none;
-}
+} */
 
-.coaching-grid ul li:before {
+/* .coaching-grid ul li:before {
     content: '';
     display: inline-block;
     height: 10px;
@@ -949,9 +978,9 @@ nav {
     margin-left: -17px;
     margin-right: 5px;
     margin-top: 2px;
-  }
+  } */
 
-.coaching-grid h3 {
+/* .coaching-grid h3 {
     margin: auto;
     margin-top: 13px;
     text-align: center;
@@ -962,7 +991,7 @@ nav {
         grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
     }
-}
+} */
 
 /* donuts + pie */
 .chart-grid {
@@ -971,7 +1000,7 @@ nav {
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: var(--pink);
-    margin: 70px auto;
+    margin: 70px auto 250px;
     width: 73%;
     padding: 56px;
     border-radius: 10px;
