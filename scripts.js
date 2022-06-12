@@ -2,17 +2,21 @@
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-        document.querySelector("#navigation").style.top = "0";
+    if (document.querySelector('.page-header__item.move')) {
+        document.body.style.overflow = "hidden";
     } else {
-        document.querySelector("#navigation").style.top = "-50%";
-    }
-    prevScrollpos = currentScrollPos;
+        document.body.style.overflow = "scroll";
+        if (prevScrollpos > currentScrollPos) {
+            document.querySelector("#navigation").style.top = "0";
+        } else {
+            document.querySelector("#navigation").style.top = "-50%";
+        }
+        prevScrollpos = currentScrollPos;
+    }  
 }
 
 //function section in Javascript and Jquery...
 function myData() {
-    // retrun;
     return;
   }
   
@@ -37,21 +41,19 @@ function closeModal(id) {
 }
 
 // small menu
-
 function closeAnimation() {
     a = document.querySelector('.row1');
     b = document.querySelector('.row2');
     c = document.querySelector('.row3'); 
     d = document.querySelector('#hamburger');
     menu = document.querySelector('#menu');
-    // let item = document.querySelectorAll('menu-item');
 
     function toggleAnimation() {
         a.classList.toggle('rotateRight');
         b.classList.toggle('transparent');
         c.classList.toggle('rotateLeft');
         menu.classList.toggle('move'); 
-        // item.classList.toggle('slide')
+        document.body.style.overflow = "scroll";
     };
 
     d.addEventListener('click', function() {
