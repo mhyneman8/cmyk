@@ -884,8 +884,6 @@ right: -46px;
 top: -200px;
 border: 1px solid #ddd;
 padding: 5px;
-/* margin-left: 110px; */
-/* position: relative; */
 height: 280px;
 width: 280px;
 z-index: 2;
@@ -899,7 +897,40 @@ height: 100px;
 background-color: #4f6367;
 opacity: 0.5;
 z-index: 0;
-/* margin-top: -200px; */
+}
+
+@media all and (max-width: 800px) {
+  .child1 {
+    right: 36px;
+  }
+  .child2 {
+    right: 114px;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .child1 {
+    right: 110px;
+  }
+  .child2 {
+    right: 180px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .child1 {
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+
+  .child2 {
+    right: 158px;
+    top: 41px;
+    width: 304px;
+    height: 268px;
+    margin-top: 0;
+  }
 }
 
 .parent {
@@ -907,6 +938,12 @@ position: relative;
 width: 630px;
 text-align: center;
 margin: 0 auto;
+}
+
+@media all and (max-width: 630px) {
+  .parent {
+    width: 100%;
+  }
 }
 
 .about-para {
@@ -919,6 +956,13 @@ position: relative;
         box-shadow: rgba(0,0,0,0.16) 0px 8px 16px;
 border-radius: 10px;
 font-size: 21px;
+}
+
+@media all and (max-width: 600px) {
+  .about-para {
+    padding: 80px;
+    margin: -43px auto 50px;
+  }
 }
 
 /* .about-img {
@@ -990,18 +1034,6 @@ width: 150px;
 
 /* That's my jam */
 
-/* .grid {
-  display: grid;
-  grid-gap: 30px;
-  grid-template-columns: 1fr 1fr 1fr;
-  background-color: var(--white);
-  margin: 70px auto;
-  width: 80%;
-  padding: 50px;
-  border-radius: 10px;
-  box-shadow: 17px 20px 50px 9px #C6C0B6;
-} */
-
 .service img {
   width: 100%;
   border-radius: 5%;
@@ -1011,6 +1043,12 @@ width: 150px;
   width: 50%;
   margin-right: 35px;
   position: relative;
+}
+
+@media all and (max-width: 600px) {
+  .service img {
+    margin-right: 0;
+  }
 }
 
 .service {
@@ -1027,19 +1065,18 @@ width: 150px;
 }
 
 @media all and (max-width: 600px) {
-.service {
-  width: 80%;
-  margin-top: 10px;
+  .service {
+    width: 80%;
+    margin-top: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
-}
-
-/* .grid .item {
-  position: relative;
-}
-
-.grid .item img {
-  vertical-align: middle;
-} */
 
 /* money coaching */
 
